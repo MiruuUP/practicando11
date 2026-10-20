@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta y Menú - El Intipalka</title>
+
+    <!-- Fuente de Google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos CSS: Base Global (styles.css) y Estilos Específicos de la Carta / Menú -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/carrusel.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Barra de Navegación -->
+    <header class="navbar">
+        <a href="index.html" class="logo" aria-label="El Intipalka, inicio">
+            <img src="assets/icons/logo-intipalka.svg" alt="" class="logo-symbol" width="40" height="40">
+            <span>EL INTIPALKA</span>
+        </a>
+
+        <!-- Botón Hamburguesa para vista móvil/tablet -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú de navegación">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="index.html#inicio">INICIO</a>
+            <a href="index.html#historia">HISTORIA</a>
+            <a href="index.html#nosotros">EXPERIENCIA</a>
+            <a href="index.html#tours">TOURS</a>
+            <a href="index.html#testimonios">OPINIONES</a>
+            <a href="menu.html" class="active">CARTA</a>
+            <a href="reserva.html">RESERVAS</a>
+            <a href="index.html#contacto">CONTACTO</a>
+            <a href="reserva.html" class="btn btn-nav-mobile btn-reserve">RESERVAR</a>
+        </nav>
+    </header>
+
+    <!-- Encabezado de la página de Menú -->
+    <section class="menu-hero">
+        <span class="section-subtitle"> <strong>NUESTRA PROPUESTA CULINARIA</strong></span>
+        <h1 class="section-title">Platos de la Casa</h1>
+        <p class="menu-hero-desc">Una fusión única de tradición iqueña y alta cocina peruana.</p>
+    </section>
+
+    <!-- Contenedor principal de la Carta -->
+    <main class="menu-container">
+
+        <!-- CATEGORÍA 1: ENTRADAS -->
+        <div class="menu-category">
+            <h2 class="category-title">Entradas</h2>
+            <div class="menu-grid">
+
+                <div class="dish-card">
+                    <img src="assets/images/cevichee.jpg" alt="Ceviche Clásico">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Ceviche Clásico</h3>
+                            <span class="price">S/ 48.00</span>
+                        </div>
+                        <p>Pesca fresca del día, leche de tigre tradicional, camote glaseado y choclo tierno.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="assets/images/tiradito.jpg" alt="Tiradito de Pescado">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Tiradito en Crema de Ají Amarillo</h3>
+                            <span class="price">S/ 46.00</span>
+                        </div>
+                        <p>Láminas de pescado fresco bañadas en suave crema de ají amarillo y crocante de canchita.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="assets/images/ensalada-pallar.jpg" alt="Ensalada de Pallares">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Ensalada de Pallares Iqueños</h3>
+                            <span class="price">S/ 38.00</span>
+                        </div>
+                        <p>Pallares verdes del valle, queso fresco andino, cebolla roja y vinagreta de la casa.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CATEGORÍA 2: PLATOS FUERTES (CARRUSEL CON FLECHAS Y PÁGINAS) -->
+        <div class="menu-category">
+            <h2 class="category-title">Platos Fuertes</h2>
+
+            <div class="carousel-container">
+
+                <!-- Pista deslizable -->
+                <div class="carousel-track" id="platos-track" tabindex="0" aria-label="Platos fuertes">
+
+                    <!-- PÁGINA 1: Platos 1, 2 y 3 -->
+                    <div class="carousel-page" id="platos-pag-1">
+                        <div class="dish-card">
+                            <img src="assets/images/lomo-saltado-en-salsa.jpg" alt="Lomo Saltado">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Lomo Saltado al Pisco</h3>
+                                    <span class="price">S/ 62.00</span>
+                                </div>
+                                <p>Trozos de lomo fino salteados al wok con cebolla, tomate, toque de pisco Queirolo y
+                                    papas nativas.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/aji-galllina.jpg" alt="Ají de Gallina">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Ají de Gallina Cremoso</h3>
+                                    <span class="price">S/ 45.00</span>
+                                </div>
+                                <p>Pechuga de gallina deshilachada en crema suave de ají amarillo, nueces y arroz con
+                                    choclo.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/arroz-mariscos.jpg" alt="Arroz con Mariscos">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Arroz con Mariscos del Valle</h3>
+                                    <span class="price">S/ 58.00</span>
+                                </div>
+                                <p>Arroz al estilo norteño salteado con mariscos selectos, ají panca y reducción de vino
+                                    blanco.</p>
+                            </div>
+                        </div>
+
+                        <!-- Flecha siguiente a página 2 -->
+                        <a href="#platos-pag-2" class="carousel-arrow arrow-right"
+                            title="Siguientes platos">&#10095;</a>
+                    </div>
+
+                    <!-- PÁGINA 2: Platos 4, 5 y 6 -->
+                    <div class="carousel-page" id="platos-pag-2">
+                        <!-- Flecha anterior a página 1 -->
+                        <a href="#platos-pag-1" class="carousel-arrow arrow-left" title="Platos anteriores">&#10094;</a>
+
+                        <div class="dish-card">
+                            <img src="assets/images/secoo.jpg" alt="Seco de Res con Pallares">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Seco de Res con Pallares</h3>
+                                    <span class="price">S/ 56.00</span>
+                                </div>
+                                <p>Carne de res estofada lentamente en salsa de culantro y chicha de jora, acompañada de
+                                    pallares.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/paella.jpg" alt="Paella de Mariscos">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Paella Marina al Pisco</h3>
+                                    <span class="price">S/ 64.00</span>
+                                </div>
+                                <p>Arroz al azafrán con langostinos, calamares, conchas y pulpo, perfumado con pisco
+                                    Queirolo.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/ensalada-langostino.jpg" alt="Langostinos Salteados">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Langostinos al Ajo Crocante</h3>
+                                    <span class="price">S/ 52.00</span>
+                                </div>
+                                <p>Colas de langostinos doradas en mantequilla de hierbas, láminas de ajo crocante y
+                                    puré de pallar.</p>
+                            </div>
+                        </div>
+
+                        <!-- Flecha siguiente a página 3 -->
+                        <a href="#platos-pag-3" class="carousel-arrow arrow-right"
+                            title="Siguientes platos">&#10095;</a>
+                    </div>
+
+                    <!-- PÁGINA 3: Platos 7, 8 y 9 -->
+                    <div class="carousel-page" id="platos-pag-3">
+                        <!-- Flecha anterior a página 2 -->
+                        <a href="#platos-pag-2" class="carousel-arrow arrow-left" title="Platos anteriores">&#10094;</a>
+
+                        <div class="dish-card">
+                            <img src="assets/images/comida_1.jpg" alt="Arroz Meloso con Camarones">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Arroz Meloso con Camarones</h3>
+                                    <span class="price">S/ 60.00</span>
+                                </div>
+                                <p>Arroz cremoso aromatizado con ají amarillo y vino blanco, coronado con camarones
+                                    dorados y pallares tiernos.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/linguini.jpg" alt="Linguini a la Huancaína con Lomo">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Linguini a la Huancaína con Lomo</h3>
+                                    <span class="price">S/ 58.00</span>
+                                </div>
+                                <p>Pasta artesanal bañada en cremosa salsa a la huancaína, coronada con lomo fino
+                                    salteado al wok y queso parmesano.</p>
+                            </div>
+                        </div>
+
+                        <div class="dish-card">
+                            <img src="assets/images/calamar.jpg" alt="Calamares Crocantes al Pisco">
+                            <div class="dish-info">
+                                <div class="dish-header">
+                                    <h3>Calamares Crocantes al Pisco</h3>
+                                    <span class="price">S/ 48.00</span>
+                                </div>
+                                <p>Aros de calamar marinados en pisco y fritos a la perfección, con yucas doradas, salsa
+                                    criolla y tártara de la casa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-mobile-controls">
+                    <button type="button" class="carousel-prev" aria-label="Plato anterior"
+                        aria-controls="platos-track">&#10094;</button>
+                    <span class="carousel-status" role="status" aria-live="polite">Plato 1 de 9</span>
+                    <button type="button" class="carousel-next" aria-label="Plato siguiente"
+                        aria-controls="platos-track">&#10095;</button>
+                </div>
+                <p class="carousel-mobile-hint">Desliza para descubrir los platos o usa las flechas.</p>
+            </div>
+        </div>
+
+        <!-- CATEGORÍA 3: POSTRES Y VINOS -->
+        <div class="menu-category">
+            <h2 class="category-title">Postres & Maridaje</h2>
+            <div class="menu-grid">
+
+                <div class="dish-card">
+                    <img src="assets/images/postre-chocolate.jpg" alt="Mousse de Chocolate">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Mousse de Cacao Peruano</h3>
+                            <span class="price">S/ 28.00</span>
+                        </div>
+                        <p>Cacao al 70%, coulis de frutos rojos del valle y praliné de pecanas.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="assets/images/tarta-manzana.jpg" alt="Tarta de Manzana">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Tarta de Manzana Rústica</h3>
+                            <span class="price">S/ 26.00</span>
+                        </div>
+                        <p>Manzanas acarameladas al horno sobre masa crocante y helado artesanal de vainilla.</p>
+                    </div>
+                </div>
+
+                <div class="dish-card">
+                    <img src="assets/images/varios-vinos.jpg" alt="Selección de Vinos Intipalka">
+                    <div class="dish-info">
+                        <div class="dish-header">
+                            <h3>Copa de Vino Intipalka Reserva</h3>
+                            <span class="price">S/ 32.00</span>
+                        </div>
+                        <p>Variedades Malbec, Tannat o Sauvignon Blanc, producidas en los viñedos de Queirolo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <!-- Pie de página (Footer) compartido -->
+    <footer class="footer" id="reservaciones">
+
+        <!-- Fila superior: mapa a la izquierda, columnas a la derecha -->
+        <div class="footer-main">
+
+            <!-- Mapa a la izquierda -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.0963844862054!2d-75.69175326028328!3d-13.97947458897288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91110310f722e9ad%3A0xf718f4f2321a611c!2sEl%20Intipalka%20Restaurante!5e0!3m2!1ses-419!2spe!4v1791850568060!5m2!1ses-419!2spe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+            <!-- Columnas de info a la derecha -->
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <h2 class="footer-logo">El Intipalka</h2>
+                        <p>Un santuario de sabor en el Valle del Sol.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" class="social-icon">
+                            Facebook</a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                            Instagram</a>
+                        <a href="#"><img src="assets/icons/youtube.svg" alt="YouTube" class="social-icon"> YouTube</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">RESERVAS DE ALOJAMIENTO</h3>
+                    <ul class="footer-list">
+                        <li><a href="mailto:reservas@hotelvinasqueirolo.com">reservas@hotelvinasqueirolo.com</a></li>
+                        <li><a href="mailto:reservas1@hotelvinasqueirolo.com">reservas1@hotelvinasqueirolo.com</a></li>
+                        <li><a href="mailto:ventas@hotelvinasqueirolo.com">ventas@hotelvinasqueirolo.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">CONTACTO</h3>
+                    <ul class="footer-list">
+                        <li>Central Telefónica: (+511) 261-3772</li>
+                        <li>Ica: (+51) 965397086</li>
+                        <li>Carretera San José de los Molinos<br>Km 11, Los Molinos, Ica - Perú</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">HORARIO DE ATENCIÓN</h3>
+                    <p class="footer-text">
+                        Lunes a Viernes de 8:00 am a 5:30 pm<br>
+                        Sábado de 9:00 am a 1:00 pm
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">LEGALES</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Consentimiento de tratamiento de datos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2026 El Intipalka Restaurante. Valle del Sol, Ica.</p>
+        </div>
+    </footer>
+
+    <!-- Script para navegación fluida y encuadre exacto del carrusel -->
+    <script>
+        // Cierre automático del menú móvil al hacer clic en un enlace
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            if (navToggle) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navToggle.checked = false;
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

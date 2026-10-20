@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Intipalka</title>
+
+    <!-- Importación de las familias tipográficas Playfair Display y Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos CSS: Base Global (styles.css) y Estilos Específicos de Inicio -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/validacion.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar / Encabezado principal -->
+    <header class="navbar">
+        <a href="index.html" class="logo" aria-label="El Intipalka, inicio">
+            <img src="assets/icons/logo-intipalka.svg" alt="" class="logo-symbol" width="40" height="40">
+            <span>EL INTIPALKA</span>
+        </a>
+
+        <!-- Botón Hamburguesa para vista móvil/tablet -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú de navegación">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="nav-links">
+            <a href="#inicio">INICIO</a>
+            <a href="#historia">HISTORIA</a>
+            <a href="#nosotros">EXPERIENCIA</a>
+            <a href="#tours">TOURS</a>
+            <a href="#testimonios">OPINIONES</a>
+            <a href="menu.html">CARTA</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="reserva.html" class="btn btn-nav-mobile btn-reserve">RESERVAR</a>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Fondo con logo y título principal) -->
+    <main class="hero" id="inicio">
+
+        <!--contenedor del contenido central-->
+        <div class="hero-content">
+            <div class="subtitle">EL VALLE DE</div>
+            <h1 class="title">NUESTRO ORIGEN</h1>
+            <p class="description">
+                Los invitamos a vivir una exquisita experiencia gastronómica con la nueva carta del restaurante El
+                Intipalka, del Hotel Viñas Queirolo. Hemos creado cada plato para despertar en nuestros comensales
+                el placer de disfrutar un mundo de sensaciones únicas.
+            </p>
+            <a href="reserva.html" class="btn btn-gold btn-reserve">RESERVAR MESA</a>
+        </div>
+    </main>
+
+    <!-- Sección de Historia (con Id) -->
+    <section class="history-section" id="historia">
+        <!--contenedor interno de la historia-->
+        <div class="history-content">
+
+            <!--bloque que agrupa los textos-->
+            <div class="history-text">
+                <span class="section-subtitle">LA HISTORIA</span>
+                <h2 class="section-title">Nuestra Herencia</h2>
+                <p>
+                    Ubicado en el corazón del fértil Valle de Ica, <strong>El Intipalka</strong> —cuyo nombre en quechua
+                    significa <em>"Valle del Sol"</em>— nace como un homenaje a la generosidad de nuestra tierra y a la
+                    tradición vitivinícola centenaria de la familia Santiago Queirolo.
+                </p>
+                <p>
+                    Nuestra terraza rústica, cobijada a la sombra de antiguas vides y con vista panorámica a los
+                    viñedos, te invita a disfrutar de historias compartidas y copas alzadas, celebrando la perfecta
+                    armonía entre la alta gastronomía peruana y la pasión por el buen vino.
+                </p>
+                <a href="menu.html" class="link-discover">DESCUBRE NUESTRA PROPUESTA</a>
+            </div>
+            <div class="history-image-wrapper">
+                <div class="image-backdrop"></div> <!--elemento decorativo dla img-->
+                <img src="assets/images/Intapalka.jpg" alt="Nuestra Herencia Terrace" class="history-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia Gastronómica (Platos y Menú) -->
+    <section class="gastronomy-section" id="nosotros">
+        <div class="gastronomy-header"> <!--contenedor del encabezado d la seccioón-->
+            <span class="section-subtitle">SABOR LOCAL</span>
+            <h2 class="section-title">Experiencia Gastronómica</h2>
+        </div> <!--TUBILLA-->
+
+        <div class="gastronomy-content">
+            <div class="gastronomy-image-container">
+                <img src="assets/images/comida_1.jpg" alt="Plato Gourmet del Mar y la Tierra" class="gastronomy-image">
+            </div>
+            <div class="gastronomy-text">
+                <h3 class="gastronomy-title">Sabores del Mar y la Tierra</h3>
+                <p>Nuestro menú es un viaje cuidadosamente seleccionado a través de los ingredientes más preciados de la
+                    región. Desde la pesca fresca del Pacífico hasta los productos madurados al sol del valle, cada
+                    plato está diseñado para armonizar perfectamente con nuestra excepcional oferta de vinos.</p>
+                <a href="menu.html" class="btn btn-outline">EXPLORAR EL MENÚ</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Tour & Cata de Vinos -->
+    <section class="wine-tour-section" id="tours">
+        <div class="wine-tour-container">
+
+            <!-- Bloque de contenido -->
+            <div class="wine-tour-content">
+                <h2 class="wine-tour-title">Tour por los Viñedos & Cata Guiada</h2>
+                <p class="wine-tour-desc">
+                    Complementa tu visita gastronómica recorriendo las históricas plantaciones de
+                    <strong>Viñas Queirolo</strong>. Descubre el proceso de elaboración de nuestros vinos de altura
+                    y disfruta de una cata guiada por sommeliers expertos en nuestra cava subterránea.
+                </p>
+
+                <div class="wine-tour-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon-box">
+                            <img src="assets/icons/uva.svg" alt="Paseo por Viñedos" class="tour-icon">
+                        </div>
+                        <div>
+                            <strong>Paseo por Viñedos</strong>
+                            <p>Recorrido guiado al atardecer</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon-box">
+                            <img src="assets/icons/copa.svg" alt="Cata de 4 Variedades" class="tour-icon">
+                        </div>
+                        <div>
+                            <strong>Cata de 4 Variedades</strong>
+                            <p>Selección Intipalka Gran Reserva</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Imagen panorámica de las bodegas / barricas -->
+            <div class="wine-tour-image-box">
+                <img src="assets/images/bodegass.jpg" alt="Cava de Vinos y Barricas Intipalka">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios y Reseñas de Clientes -->
+    <section class="testimonials-section" id="testimonios">
+        <div class="testimonials-header">
+            <span class="section-subtitle">OPINIONES DE NUESTROS COMENSALES</span>
+            <h2 class="section-title">Experiencias Inolvidables</h2>
+            <div class="overall-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.9 / 5 en TripAdvisor & Google Reviews</span>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-card">
+                <div class="card-quote-mark">“</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    El Lomo Saltado al Pisco y el maridaje con vino Intipalka Reserva fueron una experiencia de otro
+                    nivel. La vista a los viñedos al atardecer es simplemente mágica.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">CM</div>
+                    <div class="author-info">
+                        <h4>Camila Mendoza</h4>
+                        <span>Lima, Perú • Visita en pareja</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonial-card">
+                <div class="card-quote-mark">“</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    Atención impecable en cada detalle. La frescura de los ingredientes del valle y la creatividad en
+                    cada plato hacen de este restaurante una parada obligatoria en Ica.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AR</div>
+                    <div class="author-info">
+                        <h4>Alejandro Rossi</h4>
+                        <span>Buenos Aires • Amante del vino</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonial-card">
+                <div class="card-quote-mark">“</div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">
+                    Celebramos nuestro aniversario aquí y fue insuperable. La terraza rústica, el postre de cacao
+                    peruano y la calidez del personal hicieron la velada memorable.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">VD</div>
+                    <div class="author-info">
+                        <h4>Valeria & Diego</h4>
+                        <span>Arequipa, Perú • Celebración especial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-header">
+            <span class="section-subtitle">Estamos para ayudarte</span>
+            <h2 class="section-title" id="contact-title">Conversemos sobre tu próxima visita</h2>
+            <p>Consulta por nuestros platos, ambientes o una ocasión especial.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h3>Escríbenos</h3>
+                <p class="contact-intro">Cuéntanos cómo podemos ayudarte.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com"
+                            autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">¿En qué podemos ayudarte?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Escribe aquí tu consulta..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar mensaje <span aria-hidden="true">↗</span></button>
+                </form>
+            </div>
+            <div class="contact-schedule-container">
+                <div class="contact-schedule-heading">
+                    <img src="assets/icons/reloj.svg" alt="" width="28" height="28">
+                    <h3>Planifica tu visita</h3>
+                </div>
+                <p class="contact-schedule-intro">Te esperamos en el Valle del Sol.</p>
+                <table class="schedule-table">
+                    <caption>Horario de atención</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lunes a viernes</th>
+                            <td>8:00 am – 5:30 pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sábado</th>
+                            <td>9:00 am – 1:00 pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Domingo</th>
+                            <td><span class="contact-closed">Cerrado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="contact-location">
+                    <span>Encuéntranos en Ica</span>
+                    <p>Carretera San José de los Molinos,<br>Km 11, Los Molinos, Ica – Perú</p>
+                    <a href="tel:+51965397086">Llámanos: (+51) 965 397 086</a>
+                </div>
+                <a href="reserva.html" class="btn btn-reserve contact-reserve-link">Reservar una mesa <span
+                        aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="footer" id="reservaciones">
+
+        <!-- Fila superior: mapa a la izquierda, columnas a la derecha -->
+        <div class="footer-main">
+
+            <!-- Mapa a la izquierda -->
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2302.0963844862054!2d-75.69175326028328!3d-13.97947458897288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91110310f722e9ad%3A0xf718f4f2321a611c!2sEl%20Intipalka%20Restaurante!5e0!3m2!1ses-419!2spe!4v1791850568060!5m2!1ses-419!2spe"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+            <!-- Columnas de info a la derecha -->
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <h2 class="footer-logo">El Intipalka</h2>
+                        <p>Un santuario de sabor en el Valle del Sol.</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" class="social-icon">
+                            Facebook</a>
+                        <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon">
+                            Instagram</a>
+                        <a href="#"><img src="assets/icons/youtube.svg" alt="Youtube" class="social-icon"> Youtube</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">RESERVAS DE ALOJAMIENTO</h3>
+                    <ul class="footer-list">
+                        <li><a href="mailto:reservas@hotelvinasqueirolo.com">reservas@hotelvinasqueirolo.com</a></li>
+                        <li><a href="mailto:reservas1@hotelvinasqueirolo.com">reservas1@hotelvinasqueirolo.com</a></li>
+                        <li><a href="mailto:ventas@hotelvinasqueirolo.com">ventas@hotelvinasqueirolo.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">CONTACTO</h3>
+                    <ul class="footer-list">
+                        <li>Central Telefónica: (+511) 261-3772</li>
+                        <li>Ica: (+51) 965397086</li>
+                        <li>Carretera San José de los Molinos<br>Km 11, Los Molinos, Ica - Perú</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">HORARIO DE ATENCIÓN</h3>
+                    <p class="footer-text">
+                        Lunes a Viernes de 8:00 am a 5:30 pm<br>
+                        Sábado de 9:00 am a 1:00 pm
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-heading">LEGALES</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Consentimiento de tratamiento de datos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy; 2026 El Intipalka Restaurante. Valle del Sol, Ica.</p>
+        </div>
+    </footer>
+
+    <!-- Script para cerrar el menú móvil al hacer clic en un enlace -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            if (navToggle) {
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navToggle.checked = false;
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

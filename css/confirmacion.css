@@ -1,0 +1,134 @@
+/* ==========================================================================
+   EL INTIPALKA - ESTILOS DE CONFIRMACIÓN DE RESERVACIÓN (confirmacion.css)
+   Descripción: Estilos específicos para confirmacion.html (Tarjeta de éxito,
+   Resumen de reserva confirmada, Botones de navegación y agradecimiento).
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CONTENEDOR Y TARJETA DE CONFIRMACIÓN
+   -------------------------------------------------------------------------- */
+.confirmation-container {
+  max-width: 850px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.confirmation-card {
+  padding: 55px 40px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  border-top: 5px solid #1e7e4e;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+/* Ícono circular de verificación exitosa */
+.confirmation-icon {
+  margin: 0 auto 20px auto;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 2.3em;
+  background-color: #1e7e4e;
+  color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(30, 126, 78, 0.35);
+}
+
+.confirmation-subtitle {
+  color: #1e7e4e;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 0.9em;
+  font-family: "Montserrat", sans-serif;
+  display: block;
+}
+
+.confirmation-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4em;
+  color: #3b2225;
+  margin: 10px 0 16px 0;
+}
+
+.confirmation-text {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto 25px auto;
+}
+
+/* --------------------------------------------------------------------------
+   2. RECUADRO CON DETALLES DE LA RESERVA
+   -------------------------------------------------------------------------- */
+.confirmation-info-box {
+  background: #faf6f0;
+  border-radius: 8px;
+  padding: 22px;
+  max-width: 550px;
+  margin: 0 auto 35px auto;
+  border-left: 4px solid #85182a;
+  text-align: left;
+}
+
+.confirmation-info-box h4 {
+  margin: 0 0 10px 0;
+  color: #3b2225;
+  font-family: "Playfair Display", serif;
+  font-size: 1.15em;
+}
+
+.confirmation-info-box p {
+  margin: 0 0 8px 0;
+  font-size: 0.92em;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.confirmation-info-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. BOTONES DE ACCIÓN POST-RESERVA
+   -------------------------------------------------------------------------- */
+.confirmation-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-menu-alt {
+  background-color: #85182a;
+  color: #ffffff;
+}
+
+.btn-menu-alt:hover {
+  background-color: #5d101d;
+  box-shadow: 0 6px 18px rgba(133, 24, 42, 0.4);
+}
+
+/* --------------------------------------------------------------------------
+   4. RESPONSIVIDAD ESPECÍFICA
+   -------------------------------------------------------------------------- */
+@media (max-width: 600px) {
+  .confirmation-card {
+    padding: 35px 20px;
+  }
+
+  .confirmation-title {
+    font-size: 1.9em;
+  }
+
+  .confirmation-buttons {
+    flex-direction: column;
+  }
+
+  .confirmation-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
